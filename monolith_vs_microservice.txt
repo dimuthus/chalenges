@@ -1,0 +1,26 @@
+Strengths of the Monolithic Architecture
+=========================================
+Less cross-cutting concerns. Cross-cutting concerns are the concerns that affect the whole application such as logging, handling, caching, and performance monitoring. In a monolithic application, this area of functionality concerns only one application so it is easier to handle it.
+Easier debugging and testing. In contrast to the microservices architecture, monolithic applications are much easier to debug and test. Since a monolithic app is a single indivisible unit, you can run end-to-end testing much faster.
+Simple to deploy. Another advantage associated with the simplicity of monolithic apps is easier deployment. When it comes to monolithic applications, you do not have to handle many deployments – just one file or directory.
+Simple to develop. As long as the monolithic approach is a standard way of building applications, any engineering team has the right knowledge and capabilities to develop a monolithic application.
+Weaknesses of the Monolithic Architecture
+==========================================
+Understanding. When a monolithic application scales up, it becomes too complicated to understand. Also, a complex system of code within one application is hard to manage.
+Making changes. It is harder to implement changes in such a large and complex application with highly tight coupling. Any code change affects the whole system so it has to be thoroughly coordinated. This makes the overall development process much longer.
+Scalability. You cannot scale components independently, only the whole application.
+New technology barriers. It is extremely problematic to apply a new technology in a monolithic application because then the entire application has to be rewritten.
+
+
+Strengths of the Microservice Architecture
+==========================================
+Independent components. Firstly, all the services can be deployed and updated independently, which gives more flexibility. Secondly, a bug in one microservice has an impact only on a particular service and does not influence the entire application. Also, it is much easier to add new features to a microservice application than a monolithic one.
+Easier understanding. Split up into smaller and simpler components, a microservice application is easier to understand and manage. You just concentrate on a specific service that is related to a business goal you have.
+Better scalability. Another advantage of the microservices approach is that each element can be scaled independently.
+
+Weaknesses of the Microservice Architecture
+===========================================
+Extra complexity. Since a microservices architecture is a distributed system, you have to choose and set up the connections between all the modules and databases. Also, as long as such an application includes independent services, all of them have to be deployed independently.
+System distribution. A microservices architecture is a complex system of multiple modules and databases so all the connections have to be handled carefully.
+Cross-cutting concerns. When creating a microservices application, you will have to deal with a number of cross-cutting concerns. They include externalized configuration, logging, metrics, health checks, and others.
+Testing. A multitude of independently deployable components makes testing a microservices-based solution much harder.
